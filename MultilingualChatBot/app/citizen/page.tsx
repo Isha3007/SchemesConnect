@@ -111,132 +111,165 @@ export default function CitizenDashboard() {
       prev.includes(id) ? prev.filter((bid) => bid !== id) : [...prev, id]
     );
   };
-
-  return (
-    <div className="p-6">
-      {/* 🔹 App Header */}
-      <header className="mb-10 text-center">
-        <h1 className="text-5xl font-extrabold text-indigo-700 drop-shadow-sm">
-          SchemesConnect
-        </h1>
-        <p className="mt-2 text-lg text-gray-600 italic">
-          Connecting Citizens to Government Schemes
-        </p>
-      </header>
+return (
+  <div className="p-2 sm:p-6 w-full">
     
-      {/* Tabs + Profile */}
-      <div className="flex justify-between items-center border-b mb-6">
-        <div className="flex space-x-4">
-          {["schemes", "community", "chatbot"].map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`pb-2 px-4 font-medium ${
-                activeTab === tab
-                  ? "border-b-4 border-indigo-600 text-indigo-600"
-                  : "text-gray-600 hover:text-indigo-500"
-              }`}
-            >
-              {tab === "schemes" && "Schemes"}
-              {tab === "community" && "Community 💬"}
-              {tab === "govtupdate" && "Govt Updates 📰"}
-              {tab === "chatbot" && "Chatbot 🤖"}
-            </button>
-          ))}
-        </div>
-        <button
-          onClick={() => setActiveTab("profile")}
-          className={`p-2 rounded-full ${
-            activeTab === "profile"
-              ? "bg-indigo-100 text-indigo-600"
-              : "text-gray-600 hover:text-indigo-500"
-          }`}
-        >
-          <User className="w-6 h-6" />
-        </button>
+    {/* 🔹 App Header */}
+    <header className="mb-6 sm:mb-10 text-center px-2">
+      <h1 className="text-3xl sm:text-5xl font-extrabold text-indigo-700">
+        SchemesConnect
+      </h1>
+      <p className="mt-2 text-xs sm:text-lg text-gray-600 italic">
+        Connecting Citizens to Government Schemes
+      </p>
+    </header>
+
+    {/* Tabs + Profile */}
+    <div className="flex flex-col sm:flex-row justify-between items-center border-b mb-4 sm:mb-6 gap-2">
+      
+      {/* Tab Buttons */}
+      <div className="flex flex-wrap sm:flex-nowrap sm:space-x-4 gap-2 justify-center sm:justify-start w-full">
+        {["schemes", "community", "chatbot", "profile"].map((tab) => (
+          <button
+            key={tab}
+            onClick={() => setActiveTab(tab)}
+            className={`pb-1 sm:pb-2 px-2 sm:px-4 text-[10px] sm:text-base font-medium transition-all ${
+              activeTab === tab
+                ? "border-b-4 border-indigo-600 text-indigo-600"
+                : "text-gray-600 hover:text-indigo-500"
+            }`}
+          >
+            {tab === "schemes" && "Schemes"}
+            {tab === "community" && "Community 💬"}
+            {tab === "chatbot" && "Chatbot 🤖"}
+            {tab === "profile" && "Profile 👤"}
+          </button>
+        ))}
       </div>
 
-      {/* Render Active Tab */}
-      {activeTab === "schemes" && (
-        <>
-          <h1 className="text-3xl font-bold mb-6">Schemes</h1>
+      {/* Profile Icon */}
+      <div className="hidden sm:block">
+        <button
+          onClick={() => setActiveTab("profile")}
+          className="p-2 rounded-full hover:bg-indigo-50 transition-all"
+        >
+          <User className="w-4 sm:w-6 h-4 sm:h-6 text-indigo-600" />
+        </button>
+      </div>
+    </div>
 
-          <div className="flex flex-wrap items-center gap-3 bg-gray-100 p-4 rounded-lg mb-6">
-            <input
-              type="text"
-              placeholder="🔍 Search schemes..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="border p-2 rounded-md flex-1"
-            />
-            <select
-              value={filter}
-              onChange={(e) => setFilter(e.target.value)}
-              className="border p-2 rounded-md"
+    {/* Render Active Tab */}
+    {activeTab === "schemes" && (
+      <div className="w-full">
+        <h1 className="text-xl sm:text-3xl font-bold mb-4 sm:mb-6">
+          Schemes
+        </h1>
+
+        {/* Search + Filter */}
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 bg-gray-100 p-3 sm:p-4 rounded-lg mb-4 sm:mb-6">
+          <input
+            type="text"
+            placeholder="🔍 Search schemes..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="border p-2 text-xs sm:text-base rounded-md flex-1 w-full"
+          />
+          <select
+            value={filter}
+            onChange={(e) => setFilter(e.target.value)}
+            className="border p-2 text-xs sm:text-base rounded-md w-full sm:w-auto"
+          >
+            {categories.map((cat) => (
+              <option key={cat}>{cat}</option>
+            ))}
+          </select>
+        </div>
+
+        {/* Scheme Cards */}
+        <div className="space-y-3 sm:space-y-6">
+          {filteredSchemes.map((scheme) => (
+            <div
+              key={scheme.id}
+              className="border rounded-xl shadow-sm p-3 sm:p-6 bg-white text-[11px] sm:text-base"
             >
-              {categories.map((cat) => (
-                <option key={cat}>{cat}</option>
-              ))}
-            </select>
-          </div>
-
-          <div className="space-y-6">
-            {filteredSchemes.map((scheme) => (
-              <div key={scheme.id} className="border rounded-lg shadow-sm p-6 bg-white">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h2 className="text-xl font-bold mb-2">{scheme.title}</h2>
-                    <p className="text-gray-600 mb-3">{scheme.description}</p>
-                    <p className="text-sm text-gray-500 mb-4">
-                      PUBLISH DATE: {scheme.publishDate}
-                    </p>
-                  </div>
-                  <div className="flex space-x-2">
-                    <button onClick={() => toggleBookmark(scheme.id)}>
-                      {bookmarks.includes(scheme.id) ? (
-                        <BookmarkCheck className="text-indigo-600 w-6 h-6" />
-                      ) : (
-                        <Bookmark className="text-gray-500 w-6 h-6" />
-                      )}
-                    </button>
-                  </div>
+              <div className="flex flex-col sm:flex-row justify-between items-start gap-2">
+                <div>
+                  <h2 className="text-sm sm:text-xl font-bold mb-2">
+                    {scheme.title}
+                  </h2>
+                  <p className="text-gray-600 mb-2 sm:mb-3">
+                    {scheme.description}
+                  </p>
+                  <p className="text-[9px] sm:text-sm text-gray-500">
+                    Publish Date: {scheme.publishDate}
+                  </p>
                 </div>
 
-                <button
-                  onClick={() => setExpanded(expanded === scheme.id ? null : scheme.id)}
-                  className="mt-3 bg-yellow-700 hover:bg-yellow-800 text-white px-4 py-2 rounded-md"
-                >
-                  {expanded === scheme.id ? "Hide Details" : "View Details"}
-                </button>
-
-                {expanded === scheme.id && (
-                  <div className="mt-4 p-4 bg-gray-50 border rounded-lg">
-                    <p className="mb-2">
-                      <span className="font-semibold">Eligibility:</span> {scheme.eligibility}
-                    </p>
-                    <p className="mb-2 font-semibold">Documents Required:</p>
-                    <ul className="list-disc list-inside text-gray-700 mb-2">
-                      {scheme.documents.map((doc, i) => (
-                        <li key={i}>{doc}</li>
-                      ))}
-                    </ul>
-                    <p>
-                      <span className="font-semibold">Where to Apply:</span>{" "}
-                      <a href={scheme.applyLink} target="_blank" className="text-blue-600 underline">
-                        {scheme.applyLink}
-                      </a>
-                    </p>
-                  </div>
-                )}
+                {/* Bookmark */}
+                <div className="flex space-x-2 self-end sm:self-auto">
+                  <button onClick={() => toggleBookmark(scheme.id)}>
+                    {bookmarks.includes(scheme.id) ? (
+                      <BookmarkCheck className="text-indigo-600 w-4 sm:w-6 h-4 sm:h-6" />
+                    ) : (
+                      <Bookmark className="text-gray-500 w-4 sm:w-6 h-4 sm:h-6" />
+                    )}
+                  </button>
+                </div>
               </div>
-            ))}
-          </div>
-        </>
-      )}
 
-      {activeTab === "community" && <Community />}
-      {activeTab === "chatbot" && <Chatbot />}
-      {activeTab === "profile" && <Profile />}
-    </div>
-  );
+              <button
+                onClick={() =>
+                  setExpanded(expanded === scheme.id ? null : scheme.id)
+                }
+                className="mt-2 sm:mt-3 bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-md text-[10px] sm:text-base transition-all"
+              >
+                {expanded === scheme.id ? "Hide Details" : "View Details"}
+              </button>
+
+              {expanded === scheme.id && (
+                <div className="mt-3 sm:mt-4 p-3 sm:p-4 bg-gray-50 border rounded-lg">
+                  <p className="mb-2">
+                    <span className="font-semibold">Eligibility:</span>{" "}
+                    {scheme.eligibility}
+                  </p>
+
+                  <p className="mb-1 font-semibold">
+                    Documents Required:
+                  </p>
+
+                  <ul className="list-disc list-inside text-gray-700 text-[10px] sm:text-base">
+                    {scheme.documents.map((doc, i) => (
+                      <li key={i}>{doc}</li>
+                    ))}
+                  </ul>
+
+                  <p className="mt-2">
+                    <span className="font-semibold">Where to Apply:</span>{" "}
+                    <a
+                      href={scheme.applyLink}
+                      target="_blank"
+                      className="text-blue-600 underline text-[9px] sm:text-base"
+                    >
+                      {scheme.applyLink.split("?")[0]}
+                    </a>
+                  </p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {activeTab === "community" && <Community />}
+    {activeTab === "chatbot" && <Chatbot />}
+    {activeTab === "profile" && <Profile />}
+
+    {/* Disclaimer */}
+    <footer className="text-[8px] sm:text-xs text-gray-400 text-center mt-3 sm:mt-6">
+      *SchemesConnect assistant may make mistakes. Always verify important information.
+    </footer>
+  </div>
+);
+
 }

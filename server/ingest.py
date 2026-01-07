@@ -14,7 +14,7 @@ os.environ["ANONYMIZED_TELEMETRY"] = "False"
 # Windows-safe PDF loader import
 from langchain_community.document_loaders.pdf import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain.schema import Document
+from langchain_core.documents import Document
 from langchain_chroma import Chroma
 
 from get_embedding_function import get_embedding_function
@@ -40,7 +40,7 @@ def scrape_website(url, delay=1.0):
         from playwright.sync_api import sync_playwright
 
         with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
+            browser = p.chromium.launch(channel="chrome")
             page = browser.new_page()
             page.set_extra_http_headers(HEADERS)
             page.goto(url, timeout=30000)  # wait up to 30s
@@ -214,10 +214,10 @@ def build_web_documents(websites, crawl=True):
             docs.append(doc)
     return docs
 
-def clear_database():
-    if os.path.exists(CHROMA_PATH):
-        shutil.rmtree(CHROMA_PATH)
-        print("Chroma directory removed.")
+# def clear_database():
+#     if os.path.exists(CHROMA_PATH):
+#         shutil.rmtree(CHROMA_PATH)
+#         print("Chroma directory removed.")
 
 def ingest(reset: bool = False, websites_file: str = WEBSITES_FILE):
     if reset:

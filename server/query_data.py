@@ -1,8 +1,10 @@
 import os
 from dotenv import load_dotenv
 from langchain_chroma import Chroma
-from langchain.prompts import ChatPromptTemplate
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_core.prompts import ChatPromptTemplate
+# from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_groq import ChatGroq
+
 # from langchain_ollama import OllamaLLM # optional
 from get_embedding_function import get_embedding_function
 
@@ -42,7 +44,11 @@ def query_rag(query_text: str):
     prompt = prompt_template.format(context=context_text, question=query_text)
 
     # LLM choice (default: Gemini)
-    model = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
+    # model = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+    model = ChatGroq(
+    model="llama-3.1-8b-instant",
+    api_key=os.environ["GROQ_API_KEY"]
+)
     response = model.invoke(prompt)
     answer = response.content if hasattr(response, "content") else str(response)
 

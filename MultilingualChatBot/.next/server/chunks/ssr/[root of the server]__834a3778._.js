@@ -91,185 +91,185 @@ function App() {
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "h-screen w-screen flex items-center justify-center bg-gradient-to-r from-blue-50 to-gray-100 p-4",
+        className: "min-h-screen w-full flex items-center justify-center bg-gradient-to-r from-blue-50 to-gray-100 p-2 sm:p-4",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-full max-w-4xl bg-white rounded-3xl shadow-xl flex flex-col overflow-hidden",
+            className: "w-full sm:max-w-4xl bg-white rounded-3xl shadow-xl flex flex-col overflow-hidden",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "bg-gradient-to-r from-blue-600 to-blue-500 text-white px-6 py-5 flex flex-col rounded-t-3xl",
+                    className: "bg-gradient-to-r from-blue-600 to-blue-500 text-white px-4 sm:px-6 py-4 sm:py-5 flex flex-col",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-2xl font-bold",
+                            className: "text-xl sm:text-2xl font-bold",
                             children: "SchemesConnect"
                         }, void 0, false, {
                             fileName: "[project]/app/chatbot/page.tsx",
-                            lineNumber: 87,
-                            columnNumber: 11
+                            lineNumber: 88,
+                            columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-sm font-light text-blue-100 mt-1",
+                            className: "text-xs sm:text-sm font-light text-blue-100 mt-1",
                             children: "Your one-stop portal for government schemes & citizen services"
                         }, void 0, false, {
                             fileName: "[project]/app/chatbot/page.tsx",
-                            lineNumber: 88,
-                            columnNumber: 11
+                            lineNumber: 89,
+                            columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/chatbot/page.tsx",
-                    lineNumber: 86,
-                    columnNumber: 9
+                    lineNumber: 87,
+                    columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "p-4 bg-gray-50 border-b flex flex-wrap gap-3",
+                    className: "p-3 sm:p-4 bg-gray-50 border-b flex flex-wrap gap-2 sm:gap-3 justify-center sm:justify-start",
                     children: COMMON_QUESTIONS.map((q, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: ()=>send(q),
-                            className: "px-5 py-2 bg-blue-100 text-blue-800 rounded-full font-medium hover:bg-blue-200 transition-all duration-200 shadow-sm",
+                            className: "px-3 sm:px-5 py-1.5 sm:py-2 bg-blue-100 text-blue-800 text-[10px] sm:text-sm rounded-full font-medium hover:bg-blue-200 transition-all duration-200 shadow-sm",
                             children: q
                         }, i, false, {
                             fileName: "[project]/app/chatbot/page.tsx",
-                            lineNumber: 96,
-                            columnNumber: 13
+                            lineNumber: 97,
+                            columnNumber: 11
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/chatbot/page.tsx",
-                    lineNumber: 94,
-                    columnNumber: 9
+                    lineNumber: 95,
+                    columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     ref: listRef,
-                    className: "flex-1 overflow-y-auto p-6 space-y-4 bg-gray-50",
+                    className: "flex-1 overflow-y-auto p-3 sm:p-6 space-y-3 sm:space-y-4 bg-gray-50",
                     style: {
-                        minHeight: "550px"
+                        minHeight: "400px"
                     },
                     children: [
                         messages.map((msg, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `flex items-start gap-3 ${msg.role === "user" ? "justify-end" : "justify-start"}`,
+                                className: `flex items-start gap-2 sm:gap-3 ${msg.role === "user" ? "justify-end" : "justify-start"}`,
                                 children: [
                                     msg.role === "assistant" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex-shrink-0 text-2xl",
+                                        className: "flex-shrink-0 text-xl sm:text-2xl",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaRobot"], {
                                             className: "text-gray-600"
                                         }, void 0, false, {
                                             fileName: "[project]/app/chatbot/page.tsx",
                                             lineNumber: 122,
-                                            columnNumber: 19
+                                            columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/chatbot/page.tsx",
                                         lineNumber: 121,
-                                        columnNumber: 17
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: `px-5 py-3 rounded-3xl max-w-[75%] break-words shadow-md ${msg.role === "user" ? "bg-blue-600 text-white rounded-br-none" : "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900 rounded-bl-none"}`,
+                                        className: `px-3 sm:px-5 py-2 sm:py-3 rounded-3xl max-w-[85%] sm:max-w-[75%] break-words text-xs sm:text-base shadow-md ${msg.role === "user" ? "bg-blue-600 text-white rounded-br-none" : "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900 rounded-bl-none"}`,
                                         children: [
                                             msg.content,
                                             msg.sources && msg.sources.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "mt-2 text-xs text-gray-700 flex flex-wrap gap-1",
+                                                className: "mt-2 text-[9px] sm:text-xs text-gray-700 flex flex-wrap gap-1",
                                                 children: msg.sources.map((s, j)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "inline-block px-2 py-0.5 bg-gray-300 rounded-full text-gray-800",
+                                                        className: "inline-block px-2 py-0.5 bg-gray-300 rounded-full",
                                                         children: s
                                                     }, j, false, {
                                                         fileName: "[project]/app/chatbot/page.tsx",
                                                         lineNumber: 138,
-                                                        columnNumber: 23
+                                                        columnNumber: 21
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/chatbot/page.tsx",
                                                 lineNumber: 136,
-                                                columnNumber: 19
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/chatbot/page.tsx",
-                                        lineNumber: 127,
-                                        columnNumber: 15
+                                        lineNumber: 126,
+                                        columnNumber: 13
                                     }, this),
                                     msg.role === "user" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex-shrink-0 text-2xl",
+                                        className: "flex-shrink-0 text-xl sm:text-2xl",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaUserCircle"], {
                                             className: "text-blue-600"
                                         }, void 0, false, {
                                             fileName: "[project]/app/chatbot/page.tsx",
-                                            lineNumber: 152,
-                                            columnNumber: 19
+                                            lineNumber: 151,
+                                            columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/chatbot/page.tsx",
-                                        lineNumber: 151,
-                                        columnNumber: 17
+                                        lineNumber: 150,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, i, true, {
                                 fileName: "[project]/app/chatbot/page.tsx",
-                                lineNumber: 113,
-                                columnNumber: 13
+                                lineNumber: 114,
+                                columnNumber: 11
                             }, this)),
                         loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex items-center gap-3 justify-start",
+                            className: "flex items-center gap-2 sm:gap-3 justify-start",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaRobot"], {
-                                    className: "text-gray-600 text-2xl"
+                                    className: "text-gray-600 text-xl sm:text-2xl"
                                 }, void 0, false, {
                                     fileName: "[project]/app/chatbot/page.tsx",
-                                    lineNumber: 161,
-                                    columnNumber: 15
+                                    lineNumber: 159,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex space-x-1",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "w-2 h-2 bg-gray-600 rounded-full animate-bounce"
+                                            className: "w-1.5 sm:w-2 h-1.5 sm:h-2 bg-gray-600 rounded-full animate-bounce"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/chatbot/page.tsx",
+                                            lineNumber: 161,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "w-1.5 sm:w-2 h-1.5 sm:h-2 bg-gray-600 rounded-full animate-bounce delay-150"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/chatbot/page.tsx",
+                                            lineNumber: 162,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "w-1.5 sm:w-2 h-1.5 sm:h-2 bg-gray-600 rounded-full animate-bounce delay-300"
                                         }, void 0, false, {
                                             fileName: "[project]/app/chatbot/page.tsx",
                                             lineNumber: 163,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "w-2 h-2 bg-gray-600 rounded-full animate-bounce delay-150"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/chatbot/page.tsx",
-                                            lineNumber: 164,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "w-2 h-2 bg-gray-600 rounded-full animate-bounce delay-300"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/chatbot/page.tsx",
-                                            lineNumber: 165,
-                                            columnNumber: 17
+                                            columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/chatbot/page.tsx",
-                                    lineNumber: 162,
-                                    columnNumber: 15
+                                    lineNumber: 160,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/chatbot/page.tsx",
-                            lineNumber: 160,
-                            columnNumber: 13
+                            lineNumber: 158,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/chatbot/page.tsx",
-                    lineNumber: 107,
-                    columnNumber: 9
+                    lineNumber: 108,
+                    columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                     onSubmit: (e)=>{
                         e.preventDefault();
                         if (canSend) send();
                     },
-                    className: "flex p-4 border-t bg-white items-center gap-3",
+                    className: "flex p-2 sm:p-4 border-t bg-white items-center gap-2 sm:gap-3",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
                             value: input,
                             onChange: (e)=>setInput(e.target.value),
                             rows: 1,
                             placeholder: "Type a message...",
-                            className: "flex-1 resize-none border border-gray-300 rounded-2xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-400 shadow-sm",
+                            className: "flex-1 resize-none border border-gray-300 rounded-2xl p-2 sm:p-4 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-400",
                             onKeyDown: (e)=>{
                                 if (e.key === "Enter" && !e.shiftKey) {
                                     e.preventDefault();
@@ -278,43 +278,43 @@ function App() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/app/chatbot/page.tsx",
-                            lineNumber: 179,
-                            columnNumber: 11
+                            lineNumber: 177,
+                            columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             type: "submit",
                             disabled: !canSend,
-                            className: "px-6 py-3 rounded-2xl bg-blue-600 text-white font-semibold hover:bg-blue-700 disabled:opacity-50 transition-all",
+                            className: "px-3 sm:px-6 py-2 sm:py-3 rounded-2xl bg-blue-600 text-white text-xs sm:text-base font-semibold hover:bg-blue-700 disabled:opacity-50 transition-all",
                             children: "Send"
                         }, void 0, false, {
                             fileName: "[project]/app/chatbot/page.tsx",
-                            lineNumber: 192,
-                            columnNumber: 11
+                            lineNumber: 190,
+                            columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/chatbot/page.tsx",
-                    lineNumber: 172,
-                    columnNumber: 9
+                    lineNumber: 170,
+                    columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-xs text-gray-400 text-center py-2",
+                    className: "text-[8px] sm:text-xs text-gray-400 text-center py-1 sm:py-2",
                     children: "*SchemesConnect assistant may make mistakes. Always verify important information."
                 }, void 0, false, {
                     fileName: "[project]/app/chatbot/page.tsx",
-                    lineNumber: 202,
-                    columnNumber: 9
+                    lineNumber: 200,
+                    columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/chatbot/page.tsx",
             lineNumber: 84,
-            columnNumber: 7
+            columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/chatbot/page.tsx",
         lineNumber: 83,
-        columnNumber: 5
+        columnNumber: 3
     }, this);
 }
 }}),
@@ -1499,215 +1499,224 @@ function CitizenDashboard() {
             ]);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "p-6",
+        className: "p-2 sm:p-6 w-full",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-                className: "mb-10 text-center",
+                className: "mb-6 sm:mb-10 text-center px-2",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-5xl font-extrabold text-indigo-700 drop-shadow-sm",
+                        className: "text-3xl sm:text-5xl font-extrabold text-indigo-700",
                         children: "SchemesConnect"
                     }, void 0, false, {
                         fileName: "[project]/app/citizen/page.tsx",
                         lineNumber: 119,
-                        columnNumber: 9
+                        columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "mt-2 text-lg text-gray-600 italic",
+                        className: "mt-2 text-xs sm:text-lg text-gray-600 italic",
                         children: "Connecting Citizens to Government Schemes"
                     }, void 0, false, {
                         fileName: "[project]/app/citizen/page.tsx",
                         lineNumber: 122,
-                        columnNumber: 9
+                        columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/citizen/page.tsx",
                 lineNumber: 118,
-                columnNumber: 7
+                columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex justify-between items-center border-b mb-6",
+                className: "flex flex-col sm:flex-row justify-between items-center border-b mb-4 sm:mb-6 gap-2",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex space-x-4",
+                        className: "flex flex-wrap sm:flex-nowrap sm:space-x-4 gap-2 justify-center sm:justify-start w-full",
                         children: [
                             "schemes",
                             "community",
-                            "chatbot"
+                            "chatbot",
+                            "profile"
                         ].map((tab)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setActiveTab(tab),
-                                className: `pb-2 px-4 font-medium ${activeTab === tab ? "border-b-4 border-indigo-600 text-indigo-600" : "text-gray-600 hover:text-indigo-500"}`,
+                                className: `pb-1 sm:pb-2 px-2 sm:px-4 text-[10px] sm:text-base font-medium transition-all ${activeTab === tab ? "border-b-4 border-indigo-600 text-indigo-600" : "text-gray-600 hover:text-indigo-500"}`,
                                 children: [
                                     tab === "schemes" && "Schemes",
                                     tab === "community" && "Community 💬",
-                                    tab === "govtupdate" && "Govt Updates 📰",
-                                    tab === "chatbot" && "Chatbot 🤖"
+                                    tab === "chatbot" && "Chatbot 🤖",
+                                    tab === "profile" && "Profile 👤"
                                 ]
                             }, tab, true, {
                                 fileName: "[project]/app/citizen/page.tsx",
-                                lineNumber: 131,
-                                columnNumber: 13
+                                lineNumber: 133,
+                                columnNumber: 11
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/citizen/page.tsx",
-                        lineNumber: 129,
-                        columnNumber: 9
+                        lineNumber: 131,
+                        columnNumber: 7
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>setActiveTab("profile"),
-                        className: `p-2 rounded-full ${activeTab === "profile" ? "bg-indigo-100 text-indigo-600" : "text-gray-600 hover:text-indigo-500"}`,
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
-                            className: "w-6 h-6"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "hidden sm:block",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>setActiveTab("profile"),
+                            className: "p-2 rounded-full hover:bg-indigo-50 transition-all",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
+                                className: "w-4 sm:w-6 h-4 sm:h-6 text-indigo-600"
+                            }, void 0, false, {
+                                fileName: "[project]/app/citizen/page.tsx",
+                                lineNumber: 156,
+                                columnNumber: 11
+                            }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/citizen/page.tsx",
-                            lineNumber: 155,
-                            columnNumber: 11
+                            lineNumber: 152,
+                            columnNumber: 9
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/citizen/page.tsx",
-                        lineNumber: 147,
-                        columnNumber: 9
+                        lineNumber: 151,
+                        columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/citizen/page.tsx",
                 lineNumber: 128,
-                columnNumber: 7
+                columnNumber: 5
             }, this),
-            activeTab === "schemes" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+            activeTab === "schemes" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-3xl font-bold mb-6",
+                        className: "text-xl sm:text-3xl font-bold mb-4 sm:mb-6",
                         children: "Schemes"
                     }, void 0, false, {
                         fileName: "[project]/app/citizen/page.tsx",
-                        lineNumber: 162,
-                        columnNumber: 11
+                        lineNumber: 164,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-wrap items-center gap-3 bg-gray-100 p-4 rounded-lg mb-6",
+                        className: "flex flex-col sm:flex-row gap-2 sm:gap-3 bg-gray-100 p-3 sm:p-4 rounded-lg mb-4 sm:mb-6",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                 type: "text",
                                 placeholder: "🔍 Search schemes...",
                                 value: search,
                                 onChange: (e)=>setSearch(e.target.value),
-                                className: "border p-2 rounded-md flex-1"
+                                className: "border p-2 text-xs sm:text-base rounded-md flex-1 w-full"
                             }, void 0, false, {
                                 fileName: "[project]/app/citizen/page.tsx",
-                                lineNumber: 165,
-                                columnNumber: 13
+                                lineNumber: 170,
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                 value: filter,
                                 onChange: (e)=>setFilter(e.target.value),
-                                className: "border p-2 rounded-md",
+                                className: "border p-2 text-xs sm:text-base rounded-md w-full sm:w-auto",
                                 children: categories.map((cat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                         children: cat
                                     }, cat, false, {
                                         fileName: "[project]/app/citizen/page.tsx",
-                                        lineNumber: 178,
-                                        columnNumber: 17
+                                        lineNumber: 183,
+                                        columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/citizen/page.tsx",
-                                lineNumber: 172,
-                                columnNumber: 13
+                                lineNumber: 177,
+                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/citizen/page.tsx",
-                        lineNumber: 164,
-                        columnNumber: 11
+                        lineNumber: 169,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "space-y-6",
+                        className: "space-y-3 sm:space-y-6",
                         children: filteredSchemes.map((scheme)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "border rounded-lg shadow-sm p-6 bg-white",
+                                className: "border rounded-xl shadow-sm p-3 sm:p-6 bg-white text-[11px] sm:text-base",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex justify-between items-start",
+                                        className: "flex flex-col sm:flex-row justify-between items-start gap-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                        className: "text-xl font-bold mb-2",
+                                                        className: "text-sm sm:text-xl font-bold mb-2",
                                                         children: scheme.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/citizen/page.tsx",
-                                                        lineNumber: 188,
-                                                        columnNumber: 21
+                                                        lineNumber: 197,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-gray-600 mb-3",
+                                                        className: "text-gray-600 mb-2 sm:mb-3",
                                                         children: scheme.description
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/citizen/page.tsx",
-                                                        lineNumber: 189,
-                                                        columnNumber: 21
+                                                        lineNumber: 200,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-sm text-gray-500 mb-4",
+                                                        className: "text-[9px] sm:text-sm text-gray-500",
                                                         children: [
-                                                            "PUBLISH DATE: ",
+                                                            "Publish Date: ",
                                                             scheme.publishDate
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/citizen/page.tsx",
-                                                        lineNumber: 190,
-                                                        columnNumber: 21
+                                                        lineNumber: 203,
+                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/citizen/page.tsx",
-                                                lineNumber: 187,
-                                                columnNumber: 19
+                                                lineNumber: 196,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex space-x-2",
+                                                className: "flex space-x-2 self-end sm:self-auto",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>toggleBookmark(scheme.id),
                                                     children: bookmarks.includes(scheme.id) ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bookmark$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__BookmarkCheck$3e$__["BookmarkCheck"], {
-                                                        className: "text-indigo-600 w-6 h-6"
+                                                        className: "text-indigo-600 w-4 sm:w-6 h-4 sm:h-6"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/citizen/page.tsx",
-                                                        lineNumber: 197,
-                                                        columnNumber: 25
+                                                        lineNumber: 212,
+                                                        columnNumber: 23
                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bookmark$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Bookmark$3e$__["Bookmark"], {
-                                                        className: "text-gray-500 w-6 h-6"
+                                                        className: "text-gray-500 w-4 sm:w-6 h-4 sm:h-6"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/citizen/page.tsx",
-                                                        lineNumber: 199,
-                                                        columnNumber: 25
+                                                        lineNumber: 214,
+                                                        columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/citizen/page.tsx",
-                                                    lineNumber: 195,
-                                                    columnNumber: 21
+                                                    lineNumber: 210,
+                                                    columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/citizen/page.tsx",
-                                                lineNumber: 194,
-                                                columnNumber: 19
+                                                lineNumber: 209,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/citizen/page.tsx",
-                                        lineNumber: 186,
-                                        columnNumber: 17
+                                        lineNumber: 195,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setExpanded(expanded === scheme.id ? null : scheme.id),
-                                        className: "mt-3 bg-yellow-700 hover:bg-yellow-800 text-white px-4 py-2 rounded-md",
+                                        className: "mt-2 sm:mt-3 bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-md text-[10px] sm:text-base transition-all",
                                         children: expanded === scheme.id ? "Hide Details" : "View Details"
                                     }, void 0, false, {
                                         fileName: "[project]/app/citizen/page.tsx",
-                                        lineNumber: 205,
-                                        columnNumber: 17
+                                        lineNumber: 220,
+                                        columnNumber: 15
                                     }, this),
                                     expanded === scheme.id && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "mt-4 p-4 bg-gray-50 border rounded-lg",
+                                        className: "mt-3 sm:mt-4 p-3 sm:p-4 bg-gray-50 border rounded-lg",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "mb-2",
@@ -1717,105 +1726,118 @@ function CitizenDashboard() {
                                                         children: "Eligibility:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/citizen/page.tsx",
-                                                        lineNumber: 215,
-                                                        columnNumber: 23
+                                                        lineNumber: 232,
+                                                        columnNumber: 21
                                                     }, this),
                                                     " ",
                                                     scheme.eligibility
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/citizen/page.tsx",
-                                                lineNumber: 214,
-                                                columnNumber: 21
+                                                lineNumber: 231,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "mb-2 font-semibold",
+                                                className: "mb-1 font-semibold",
                                                 children: "Documents Required:"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/citizen/page.tsx",
-                                                lineNumber: 217,
-                                                columnNumber: 21
+                                                lineNumber: 236,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                className: "list-disc list-inside text-gray-700 mb-2",
+                                                className: "list-disc list-inside text-gray-700 text-[10px] sm:text-base",
                                                 children: scheme.documents.map((doc, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                         children: doc
                                                     }, i, false, {
                                                         fileName: "[project]/app/citizen/page.tsx",
-                                                        lineNumber: 220,
-                                                        columnNumber: 25
+                                                        lineNumber: 242,
+                                                        columnNumber: 23
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/citizen/page.tsx",
-                                                lineNumber: 218,
-                                                columnNumber: 21
+                                                lineNumber: 240,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "mt-2",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "font-semibold",
                                                         children: "Where to Apply:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/citizen/page.tsx",
-                                                        lineNumber: 224,
-                                                        columnNumber: 23
+                                                        lineNumber: 247,
+                                                        columnNumber: 21
                                                     }, this),
                                                     " ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                         href: scheme.applyLink,
                                                         target: "_blank",
-                                                        className: "text-blue-600 underline",
-                                                        children: scheme.applyLink
+                                                        className: "text-blue-600 underline text-[9px] sm:text-base",
+                                                        children: scheme.applyLink.split("?")[0]
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/citizen/page.tsx",
-                                                        lineNumber: 225,
-                                                        columnNumber: 23
+                                                        lineNumber: 248,
+                                                        columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/citizen/page.tsx",
-                                                lineNumber: 223,
-                                                columnNumber: 21
+                                                lineNumber: 246,
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/citizen/page.tsx",
-                                        lineNumber: 213,
-                                        columnNumber: 19
+                                        lineNumber: 230,
+                                        columnNumber: 17
                                     }, this)
                                 ]
                             }, scheme.id, true, {
                                 fileName: "[project]/app/citizen/page.tsx",
-                                lineNumber: 185,
-                                columnNumber: 15
+                                lineNumber: 191,
+                                columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/citizen/page.tsx",
-                        lineNumber: 183,
-                        columnNumber: 11
+                        lineNumber: 189,
+                        columnNumber: 9
                     }, this)
                 ]
-            }, void 0, true),
+            }, void 0, true, {
+                fileName: "[project]/app/citizen/page.tsx",
+                lineNumber: 163,
+                columnNumber: 7
+            }, this),
             activeTab === "community" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$community$2f$page$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/citizen/page.tsx",
-                lineNumber: 237,
-                columnNumber: 37
+                lineNumber: 264,
+                columnNumber: 35
             }, this),
             activeTab === "chatbot" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$chatbot$2f$page$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/citizen/page.tsx",
-                lineNumber: 238,
-                columnNumber: 35
+                lineNumber: 265,
+                columnNumber: 33
             }, this),
             activeTab === "profile" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$profile$2f$page$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/citizen/page.tsx",
-                lineNumber: 239,
-                columnNumber: 35
+                lineNumber: 266,
+                columnNumber: 33
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+                className: "text-[8px] sm:text-xs text-gray-400 text-center mt-3 sm:mt-6",
+                children: "*SchemesConnect assistant may make mistakes. Always verify important information."
+            }, void 0, false, {
+                fileName: "[project]/app/citizen/page.tsx",
+                lineNumber: 269,
+                columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/citizen/page.tsx",
-        lineNumber: 116,
-        columnNumber: 5
+        lineNumber: 115,
+        columnNumber: 3
     }, this);
 }
 }}),
