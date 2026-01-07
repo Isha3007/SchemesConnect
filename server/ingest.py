@@ -214,10 +214,10 @@ def build_web_documents(websites, crawl=True):
             docs.append(doc)
     return docs
 
-# def clear_database():
-#     if os.path.exists(CHROMA_PATH):
-#         shutil.rmtree(CHROMA_PATH)
-#         print("Chroma directory removed.")
+def clear_database():
+    if os.path.exists(CHROMA_PATH):
+        shutil.rmtree(CHROMA_PATH)
+        print("Chroma directory removed.")
 
 def ingest(reset: bool = False, websites_file: str = WEBSITES_FILE):
     if reset:
