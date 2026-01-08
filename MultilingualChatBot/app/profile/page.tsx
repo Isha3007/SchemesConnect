@@ -89,16 +89,28 @@ export default function Profile() {
   };
 
   // Hardcoded recommendation logic
-  const recommendSchemes = () => {
-    const recommendations: Scheme[] = [];
-    schemes.forEach((scheme) => {
-      if (scheme.category === "Housing" && profile.income === "Below 2.5 Lakh") recommendations.push(scheme);
-      else if (scheme.category === "Education" && profile.occupation === "Student") recommendations.push(scheme);
-      else if (scheme.category === "Farming" && profile.occupation === "Farmer") recommendations.push(scheme);
-      else if (scheme.category === "Health" && profile.income === "Below 2.5 Lakh") recommendations.push(scheme);
-    });
-    setRecommendedSchemes(recommendations);
-  };
+  // const recommendSchemes = () => {
+  //   const recommendations: Scheme[] = [];
+  //   schemes.forEach((scheme) => {
+  //     if (scheme.category === "Housing" && profile.income === "Below 2.5 Lakh") recommendations.push(scheme);
+  //     else if (scheme.category === "Education" && profile.occupation === "Student") recommendations.push(scheme);
+  //     else if (scheme.category === "Farming" && profile.occupation === "Farmer") recommendations.push(scheme);
+  //     else if (scheme.category === "Health" && profile.income === "Below 2.5 Lakh") recommendations.push(scheme);
+  //   });
+  //   setRecommendedSchemes(recommendations);
+  // };
+
+const recommendSchemes = async () => {
+  const res = await fetch("http://localhost:8000/api/recommend", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(profile),
+  });
+
+  const data = await res.json();
+  setRecommendedSchemes(data);
+};
+
 
   return (
     <div className="min-h-screen w-full bg-gray-100 p-6 overflow-auto">

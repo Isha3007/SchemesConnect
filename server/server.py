@@ -47,3 +47,20 @@ async def ask(req: AskRequest):
 async def run_ingest(req: IngestRequest):
     ingest(reset=req.reset)
     return {"status": "ingested", "reset": req.reset}
+
+from recommend import recommend_schemes
+
+class ProfileRequest(BaseModel):
+    age: str
+    gender: str
+    income: str
+    occupation: str
+    location: str
+    casteCategory: str
+    disability: str
+
+
+@app.post("/api/recommend")
+async def recommend(profile: ProfileRequest):
+    schemes = recommend_schemes(profile.dict())
+    return schemes
