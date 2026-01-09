@@ -845,12 +845,28 @@
     width: calc(var(--spacing) * 1);
   }
 
+  .w-1\/4 {
+    width: 25%;
+  }
+
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
 
   .w-2\.5 {
     width: calc(var(--spacing) * 2.5);
+  }
+
+  .w-2\/3 {
+    width: 66.6667%;
+  }
+
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+
+  .w-3\/4 {
+    width: 75%;
   }
 
   .w-4 {
@@ -975,6 +991,10 @@
 
   .animate-pulse {
     animation: var(--animate-pulse);
+  }
+
+  .cursor-not-allowed {
+    cursor: not-allowed;
   }
 
   .cursor-pointer {
