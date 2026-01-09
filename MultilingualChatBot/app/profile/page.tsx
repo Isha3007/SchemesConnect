@@ -10,7 +10,11 @@ interface Scheme {
   eligibility: string;
   documents: string[];
   applyLink: string;
+  source: string;
+  whyRecommended: string;
+  confidence: number;
 }
+
 
 export default function Profile() {
   const [profile, setProfile] = useState({
@@ -27,47 +31,47 @@ export default function Profile() {
   const [recommendedSchemes, setRecommendedSchemes] = useState<Scheme[]>([]);
 
   // Hardcoded scheme data
-  const schemes: Scheme[] = [
-    {
-      id: 1,
-      title: "Pradhan Mantri Awas Yojana-Urban 2.0",
-      description:
-        "Affordable housing initiative by the Government of India for urban areas.",
-      category: "Housing",
-      eligibility: "Low-income groups, EWS, and middle-income groups.",
-      documents: ["Aadhaar Card", "Income Certificate", "Proof of Residence"],
-      applyLink: "https://pmaymis.gov.in/",
-    },
-    {
-      id: 2,
-      title: "National Scholarship Portal",
-      description:
-        "Centralized portal for students to apply for scholarships.",
-      category: "Education",
-      eligibility: "Students from minority, SC/ST, OBC, and weaker backgrounds.",
-      documents: ["Aadhaar Card", "Income Certificate", "Previous Marksheet", "Bank Account Details"],
-      applyLink: "https://scholarships.gov.in/",
-    },
-    {
-      id: 3,
-      title: "Pradhan Mantri Fasal Bima Yojana",
-      description: "Crop insurance scheme for farmers.",
-      category: "Farming",
-      eligibility: "All farmers growing notified crops.",
-      documents: ["Aadhaar Card", "Land Ownership Papers", "Bank Account Details"],
-      applyLink: "https://pmfby.gov.in/",
-    },
-    {
-      id: 4,
-      title: "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana",
-      description: "Health assurance scheme providing free treatment up to ₹5 lakh.",
-      category: "Health",
-      eligibility: "Economically weaker families.",
-      documents: ["Aadhaar Card", "Ration Card"],
-      applyLink: "https://pmjay.gov.in/",
-    },
-    // add more schemes if needed
-  ];
+  // const schemes: Scheme[] = [
+  //   {
+  //     id: 1,
+  //     title: "Pradhan Mantri Awas Yojana-Urban 2.0",
+  //     description:
+  //       "Affordable housing initiative by the Government of India for urban areas.",
+  //     category: "Housing",
+  //     eligibility: "Low-income groups, EWS, and middle-income groups.",
+  //     documents: ["Aadhaar Card", "Income Certificate", "Proof of Residence"],
+  //     applyLink: "https://pmaymis.gov.in/",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "National Scholarship Portal",
+  //     description:
+  //       "Centralized portal for students to apply for scholarships.",
+  //     category: "Education",
+  //     eligibility: "Students from minority, SC/ST, OBC, and weaker backgrounds.",
+  //     documents: ["Aadhaar Card", "Income Certificate", "Previous Marksheet", "Bank Account Details"],
+  //     applyLink: "https://scholarships.gov.in/",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Pradhan Mantri Fasal Bima Yojana",
+  //     description: "Crop insurance scheme for farmers.",
+  //     category: "Farming",
+  //     eligibility: "All farmers growing notified crops.",
+  //     documents: ["Aadhaar Card", "Land Ownership Papers", "Bank Account Details"],
+  //     applyLink: "https://pmfby.gov.in/",
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana",
+  //     description: "Health assurance scheme providing free treatment up to ₹5 lakh.",
+  //     category: "Health",
+  //     eligibility: "Economically weaker families.",
+  //     documents: ["Aadhaar Card", "Ration Card"],
+  //     applyLink: "https://pmjay.gov.in/",
+  //   },
+  //   // add more schemes if needed
+  // ];
 
   // Load profile from localStorage when component mounts
   useEffect(() => {
@@ -209,14 +213,60 @@ const recommendSchemes = async () => {
       {recommendedSchemes.length > 0 && (
         <div className="max-w-4xl mx-auto mt-8 space-y-4">
           <h2 className="text-2xl font-bold mb-4">Recommended Schemes for You</h2>
-          {recommendedSchemes.map((scheme) => (
-            <div key={scheme.id} className="border p-4 rounded-lg bg-white shadow">
-              <h3 className="text-xl font-semibold">{scheme.title}</h3>
-              <p className="text-gray-600">{scheme.description}</p>
-              <p className="text-sm text-gray-500">Category: {scheme.category}</p>
-              <a href={scheme.applyLink} target="_blank" className="text-blue-600 underline">Apply Here</a>
-            </div>
-          ))}
+
+{recommendedSchemes.map((scheme) => (
+  <div
+    key={scheme.id}
+    className="border p-5 rounded-xl bg-white shadow-md space-y-2"
+  >
+    <h3 className="text-xl font-semibold text-indigo-700">
+      {scheme.title}
+    </h3>
+
+    <p className="text-sm text-gray-500">
+      Category: {scheme.category}
+    </p>
+
+    <p className="text-gray-700">{scheme.description}</p>
+
+    <p className="text-sm">
+      <span className="font-semibold">Eligibility:</span>{" "}
+      {scheme.eligibility}
+    </p>
+
+    {scheme.documents.length > 0 && (
+      <p className="text-sm">
+        <span className="font-semibold">Documents:</span>{" "}
+        {scheme.documents.join(", ")}
+      </p>
+    )}
+
+    <p className="text-sm italic text-green-700">
+      💡 {scheme.whyRecommended}
+    </p>
+
+    <div className="flex justify-between items-center pt-2">
+      <a
+        href={scheme.applyLink}
+        target="_blank"
+        className="text-blue-600 underline"
+      >
+        Apply Here
+      </a>
+
+      <span className="text-xs text-gray-400">
+        Confidence: {scheme.confidence}
+      </span>
+    </div>
+  </div>
+))}
+{recommendedSchemes.length === 0 && (
+  <p className="text-center text-gray-500 mt-6">
+    No schemes found yet. Fill your profile and click “Recommend Schemes”.
+  </p>
+)}
+
+
         </div>
       )}
     </div>

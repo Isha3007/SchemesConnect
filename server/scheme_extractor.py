@@ -1,14 +1,26 @@
 from langchain_core.prompts import ChatPromptTemplate
 
 SCHEME_PROMPT = ChatPromptTemplate.from_template("""
-You are a government scheme information extractor.
+You are an expert government policy analyst.
 
-Using ONLY the context below, extract ONE scheme in valid JSON:
+USER PROFILE:
+Age: {age}
+Gender: {gender}
+Occupation: {occupation}
+Income: {income}
+Location: {location}
+Caste: {caste}
+Disability: {disability}
 
-Context:
+From the CONTEXT below, extract ONE government scheme ONLY IF it is relevant to the user profile.
+If NOT relevant, return:
+{{ "irrelevant": true }}
+
+CONTEXT:
 {context}
 
-Output JSON format:
+If relevant, return ONLY valid JSON:
+
 {{
   "title": "",
   "category": "",
@@ -16,11 +28,14 @@ Output JSON format:
   "eligibility": "",
   "documents": [],
   "applyLink": "",
-  "source": ""
+  "source": "",
+  "whyRecommended": ""
 }}
 
 Rules:
 - Do NOT hallucinate
-- If info missing, write "Not specified"
-- Output JSON only
+- If income/occupation/location do NOT match eligibility → mark irrelevant
+- Understand income ranges like:
+  "Below 2.5 Lakh" = income < 250000
+- Output JSON ONLY
 """)

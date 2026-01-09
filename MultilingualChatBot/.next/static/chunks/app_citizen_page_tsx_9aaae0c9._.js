@@ -8,7 +8,7 @@
     "static/chunks/app_f09434ba._.js",
     "static/chunks/node_modules_react-icons_fa_index_mjs_d2e2d7f5._.js",
     "static/chunks/node_modules_react-icons_lib_74ccc930._.js",
-    "static/chunks/node_modules_c8423750._.js"
+    "static/chunks/node_modules_2b7b010c._.js"
   ],
   "source": "dynamic"
 });
